@@ -14,17 +14,44 @@
     <section id="quest1" style="display: inline-block;">
         <h2>Processando...</h2>
         <p>O orçamento já esta com os dados do cliente ?</p>
-        <button onclick="next()">Sim</button>
-        <button>Não</button>
-        <p><a href="index.html">Voltar</a></p>
+        <button onclick="ye()">Sim</button>
+        <button onclick="no()">Não</button>
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </section>
+
+    <section id="resp1" style="display: none;">
+        <h3>Atenção!</h3>
+        <p>Solicite os dados do cliente para iniciar o orçamento.
+        <br/>    (Ao menos o endereço)</p>
+        <button onclick="ok()">Ok</button>
+        <p><a href="index.html">Voltar à página inicial</a></p>
     </section>
 
     <section id="quest2" style="display: none;">
+        <h3>Após terminar a proposta clique em  "Continuar"</h3>
+        <button onclick="ye1()">Continuar</button>
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </section>
+
+    <section id="quest3" style="display: none;">
         <h2>Processando...</h2>
-        <p>O orçamento já saiu de análise ?</p>
-        <button>Sim</button>
-        <button>Não</button>
-        <p><a href="index.html">Voltar</a></p>
+        <p>A tabela de análise já está pronta ?</p>
+        <button onclick="ye2()">Sim</button>
+        <button onclick="no1()">Não</button>
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </section>
+
+    <section id="resp2" style="display: none;">
+        <h3>Atenção!</h3>
+        <p>Insira os dados para a análise e após clique em "continuar"!</p>
+        <button onclick="ok2()">Continuar</button>
+        <p><a href="index.html">Voltar à página inicial</a></p>
+    </section>
+
+    <section id="quest4" style="display: none;">
+        <h3>Orçamento liberado para análise!</h3>
+        <p>Após concluir os anexos no Trello volte à página inicial.</p>
+        <p><a href="index.html">Voltar à página inicial</a></p>
     </section>
 
     <footer>
