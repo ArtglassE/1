@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Plano Diário</title>
+</head>
+
+<body>
+    <div id="loading" style="display: block">
+        <img src="http://media.giphy.com/media/FwviSlrsfa4aA/giphy.gif" style="width:300px ;height:300px ;" />
+    </div>
+    <div id="conteudo" style="display: none">
+
+        <nav>
+            <h2>Em qual processo você está ?</h2>
+            <ul>
+                <li><a href="orc.html">Orçamento</a></li>
+                <li><a href="#">Ordem de serviço</a></li>
+                <li><a href="#">Relatórios</a></li>
+                <li><a href="#">Produção</a></li>
+                <li><a href="#">Capas Contrato</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p>Created by Willian Raniere ©, 14/11/2022</p>
+        </footer>
+
+    </div>
+
+    <script>
+        var i = setInterval(function () {
+
+            clearInterval(i);
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("conteudo").style.display = "inline";
+
+        }, 4000);
+    </script>
+</body>
+
+</html>
