@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div id="loading" style="display: block">
-        <img src="http://media.giphy.com/media/FwviSlrsfa4aA/giphy.gif" style="width:300px ;height:300px ;" />
-    </div>
     <div id="conteudo" style="display: none">
 
         <nav>
@@ -36,7 +33,6 @@
         var i = setInterval(function () {
 
             clearInterval(i);
-            document.getElementById("loading").style.display = "none";
             document.getElementById("conteudo").style.display = "inline";
 
         }, 4000);
