@@ -1,21 +1,23 @@
 body {
-    margin: 10% 5% 10% 5%;
-    text-align: center;
+    margin: 0;
     max-width: 1200px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: silver;
+    background-color: #2F39FA;
+    min-width: 700px;
 }
 
 a {
     text-decoration: none;
-}
-
-a:hover {
+    cursor: pointer;
     color: white;
 }
 
+a:hover {
+    color: #2F39FA;
+}
+
 li:hover {
-    background-color: rgba(192, 192, 192, 0.5);
+    background-color: #23A1FD;
 }
 
 ul {
@@ -23,8 +25,9 @@ ul {
     padding: 0;
 }
 
-h2 {
+.nav_title {
     margin: 20px 5px 5px 5px;
+    color: white;
 }
 
 h3 {
@@ -33,18 +36,38 @@ h3 {
 }
 
 li {
-    margin: 10px;
-    background-color: silver;
-    border-radius: 15px;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
+}
+
+hr {
+    margin: 0;
 }
 
 nav {
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 20px;
-    max-width: 600px;
-    width: 100%;
+    background-color: #205DE3;
+    min-width: 300px;
+    max-width: 400px;
+    text-align: center;
     display: inline-block;
+    position: fixed;
+    height: 100%;
+}
+
+div {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    right: 0;
+    transform: translateX(-25%);
+}
+
+.body_title {
+    color: white;
+}
+
+.body_text {
+    color: white;
+    text-align: justify;
 }
 
 section {
@@ -64,4 +87,29 @@ button {
 
 button:hover {
     background-color: rgba(192, 192, 192, 0.5);
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px;
+    background-color: #205DE3;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+    h2 {
+        display: none;
+    }
+    div {
+        display: none;
+    }
+    nav {
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
+    }
 }
