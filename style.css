@@ -1,115 +1,93 @@
-body {
-    margin: 0;
-    max-width: 1200px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #2F39FA;
-    min-width: 700px;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
-}
-
-a:hover {
-    color: #2F39FA;
-}
-
-li:hover {
-    background-color: #23A1FD;
-}
-
-ul {
-    list-style: none;
+* {
+    text-align: center;
     padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
-.nav_title {
-    margin: 20px 5px 5px 5px;
-    color: white;
-}
-
-h3 {
-    font-size: 30px;
-    margin: 20px 5px 25px 5px;
+header {
+    width: 100%;
+    padding: 30px 0 30px 0;
+    margin-bottom: 170px;
 }
 
 li {
-    padding: 20px 0 20px 0;
-}
-
-hr {
-    margin: 0;
-}
-
-nav {
-    background-color: #205DE3;
-    min-width: 300px;
-    max-width: 400px;
-    text-align: center;
     display: inline-block;
-    position: fixed;
-    height: 100%;
+    padding: 0 10px 0 10px;
 }
 
-div {
-    position: absolute;
-    text-align: center;
-    width: 50%;
-    right: 0;
-    transform: translateX(-25%);
+main {
+    padding: 0 100px 0 100px;
 }
 
-.body_title {
-    color: white;
+.main-title {
+    margin: 0 0 20px 0;
+    font-size: 40px;
 }
 
-.body_text {
-    color: white;
+.main-text {
     text-align: justify;
+    padding: 0 150px 0 150px;
 }
 
-section {
-    background-color: rgba(128, 128, 128, 0.5);
-    border-radius: 20px;
-    max-width: 600px;
-    width: 100%;
-    display: inline-block;
+.info {
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
 }
 
-button {
-    background-color: silver;
-    border-radius: 10px;
-    padding: 10px 25px 10px 25px;
-    margin: 0 10px 20px 10px;
+.tooltip {
+    display: flex;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    float: right;
 }
 
-button:hover {
-    background-color: rgba(192, 192, 192, 0.5);
+.tooltip-text {
+    visibility: hidden;
+    margin: 15px 5px 0 0;
+    padding: 5px;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    background-color: blanchedalmond;
 }
 
-footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    margin: 0px;
-    background-color: #205DE3;
-    color: white;
-    text-align: center;
+.tooltip:hover .tooltip-text {
+    visibility: visible;
 }
 
-@media only screen and (max-width: 700px) {
-    h2 {
-        display: none;
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@400;700&family=Roboto:wght@300&display=swap');
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-top: -50px;
     }
-    div {
-        display: none;
+    
+    .main-text {
+        padding: 0 10px 0 10px;
     }
-    nav {
-        position: absolute;
-        right: 50%;
-        transform: translateX(50%);
+
+    .tooltip {
+        float: left !important;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    main {
+        margin-top: -20px;
+    }
+    
+    .main-text {
+        padding: 0 10px 0 10px;
+    }
+
+    .tooltip {
+        float: right;
+        margin-top: 5px;
     }
 }
